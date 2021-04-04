@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 
-namespace projetil
+namespace Projetil
 {
     class Program
     {
@@ -26,13 +26,11 @@ namespace projetil
 
            
             double alcance = (Math.Pow(Velocidade , 2) * Math.Sin(2 * anguloEmradiano)) / g;
-            Console.WriteLine($"Alcanse: {alcance:N2} m ");
+            Console.WriteLine($"Alcance: {alcance:N2} m ");
  
             
-            double altura = Math.Pow((Velocidade * Math.Sin(Angulo)), 2) / (2 * g);
-            Console.WriteLine($"Altura máxima:{altura:N2} m");
-
-
+            double altura = Math.Pow((Velocidade * Math.Sin(anguloEmradiano)), 2) / (2 * g);
+            Console.WriteLine($"Altura máxima: {altura:N2} m");
         }
     }
 }
